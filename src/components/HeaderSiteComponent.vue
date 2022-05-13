@@ -5,6 +5,7 @@
     </div>
     <!-- /.container -->
   </header>
+  <!-- /.site_header -->
 </template>
 
 <script>
