@@ -7,9 +7,9 @@
 </template>
 
 <script>
-import HeaderSite from './components/HeaderSiteComponent.vue';
-import MainSite from './components/MainSiteComponent.vue';
-import FooterSite from './components/FooterSiteComponent.vue';
+import HeaderSite from '@/components/HeaderSiteComponent.vue';
+import MainSite from '@/components/MainSiteComponent.vue';
+import FooterSite from '@/components/FooterSiteComponent.vue';
 
 export default {
   name: 'App',

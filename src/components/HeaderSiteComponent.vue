@@ -1,12 +1,20 @@
 <template>
-  <div class="header">
-    HEADER
-  </div>
+  <header class="site_header bg_primary">
+    <div class="container">
+      <Navbar/>
+    </div>
+    <!-- /.container -->
+  </header>
 </template>
 
 <script>
+import Navbar from '@/components/NavbarComponent.vue';
+
 export default {
   name: 'HeaderSiteComponent',
+    components: {
+      Navbar
+  }
 }
 </script>
 

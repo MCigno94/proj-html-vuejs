@@ -1,6 +1,44 @@
 @import '~/node_modules/bootstrap/scss/bootstrap.scss';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+
+/* #region UTILITY */
+
+.bg_primary {
+    background-color: $forum-primary;
+}
+
+
+/* #endregion UTILITY */
+
+
+/* #region HEADER */
+
+.navbar {
+    padding: 12.5px 0;
+}
+
+
+/* #endregion HEADER */
+
+
+/* #region MAIN */
+
+
+/* #endregion MAIN */
+
+
+/* #region FOOTER */
+
+
+/* #endregion FOOTER */
