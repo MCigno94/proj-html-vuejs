@@ -9,6 +9,7 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 1rem;
 }
 
 
@@ -16,6 +17,18 @@
 
 .bg_primary {
     background-color: $forum-primary;
+}
+
+.bg_primary_btn {
+    background-color: $forum-bg_primary_btn;
+}
+
+.btn_primary {
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 
@@ -26,11 +39,23 @@
 
 header {
     .navbar {
-        padding: 12.5px 0;
         .logo {
             img {
                 width: 180px;
                 height: 45px;
+            }
+        }
+        li {
+            padding: 0 1rem;
+            a {
+                color: white;
+            }
+        }
+        form {
+            button,
+            input {
+                display: inline-block;
+                height: fit-content;
             }
         }
     }
