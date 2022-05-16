@@ -23,12 +23,24 @@
     background-color: $forum-bg_primary_btn;
 }
 
+.bg_light {
+    background-color: $forum-section;
+}
+
 .btn_primary {
     color: white;
     padding: 0.5rem 1rem;
     border: none;
     text-transform: uppercase;
-    font-weight: bold;
+}
+
+.title_section {
+    text-transform: uppercase;
+    color: $forum-bg_primary_btn;
+}
+
+.text_light_dark {
+    color: $forum-text_dark;
 }
 
 
@@ -52,6 +64,41 @@
 
 
 /* #region MAIN */
+
+.jumbotrone {
+    height: 875px;
+    background-image: url('@/assets/img/home_slider_bg.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+        height: 100%;
+        position: relative;
+        .get_now {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+            h1 {
+                font-size: 7rem;
+                margin-bottom: 0;
+            }
+            p {
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+.avada_forum {
+    padding: 2rem 0;
+    h6 {
+        font-size: 0.6rem;
+        font-weight: bold;
+        margin: 0;
+        padding: 1rem;
+    }
+}
 
 
 /* #endregion MAIN */

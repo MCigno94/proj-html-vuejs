@@ -1,9 +1,9 @@
 <template>
   <header class="site_header bg_primary">
-    <div class="container">
+    <div class="container-fluid">
       <Navbar/>
     </div>
-    <!-- /.container -->
+    <!-- /.container-fluid -->
   </header>
   <!-- /.site_header -->
 </template>

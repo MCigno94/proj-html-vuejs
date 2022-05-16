@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar navbar-light">
-    <div class="container-fluid">
+    <div class="container">
       <LogoComponent />
       <div class="navbar_component">
         <ul class="navbar-nav flex-row align-items-center" >
@@ -10,7 +10,7 @@
             <!-- /.square_select -->
           </li>
           <li class="nav-item">
-            <button class="btn_primary bg_primary_btn" href="#">join us</button>
+            <button class="rounded-1 btn_primary bg_primary_btn" href="#">join us</button>
           </li>
           <!-- button JOIN -->
           <li class="nav-item">
@@ -64,13 +64,6 @@ export default {
         position: relative;
         a {
             color: white;
-        }
-    }
-    form {
-        button,
-        input {
-            display: inline-block;
-            height: fit-content;
         }
     }
 }
