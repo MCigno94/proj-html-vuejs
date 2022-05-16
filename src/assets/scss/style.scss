@@ -9,7 +9,7 @@
     font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    font-size: 1rem;
+    font-size: 0.8rem;
 }
 
 
@@ -32,11 +32,16 @@
     padding: 0.5rem 1rem;
     border: none;
     text-transform: uppercase;
+    border-radius: 5px;
 }
 
-.title_section {
+.subtitle_section {
     text-transform: uppercase;
     color: $forum-bg_primary_btn;
+    font-size: 0.55rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0.75rem;
 }
 
 .text_light_dark {
@@ -50,13 +55,14 @@
 /* #region HEADER */
 
 .active {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background-color: $forum-primary;
     position: absolute;
-    left: 50%;
-    bottom: -40px;
-    transform: rotate(45deg) translate(-50%, 0);
+    transform-origin: 0;
+    left: calc(50% - 8px);
+    bottom: -12px;
+    transform: rotate(-45deg);
 }
 
 
@@ -92,11 +98,19 @@
 
 .avada_forum {
     padding: 2rem 0;
-    h6 {
-        font-size: 0.6rem;
-        font-weight: bold;
-        margin: 0;
-        padding: 1rem;
+}
+
+.news {
+    .activeBorder {
+        background-color: orange;
+    }
+    .h-2 {
+        height: 2px;
+    }
+    .card-body {
+        .data {
+            font-size: 0.7rem;
+        }
     }
 }
 

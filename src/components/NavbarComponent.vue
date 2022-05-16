@@ -4,16 +4,16 @@
       <LogoComponent />
       <div class="navbar_component">
         <ul class="navbar-nav flex-row align-items-center" >
-          <li class="nav-item" v-for="(item, index) in navbar" :key="index">
+          <li class="nav-item d-flex align-items-center" v-for="(item, index) in navbar" :key="index">
             <a class="text-decoration-none" href="#" @click="activeClick(index)">{{item}}</a>
             <div class="square_select" :class="selected === index ? 'active' : '' "></div>
             <!-- /.square_select -->
           </li>
-          <li class="nav-item">
-            <button class="rounded-1 btn_primary bg_primary_btn" href="#">join us</button>
+          <li class="nav-item d-flex align-items-center">
+            <button class="btn_primary bg_primary_btn" href="#">join us</button>
           </li>
           <!-- button JOIN -->
-          <li class="nav-item">
+          <li class="nav-item d-flex align-items-center">
             <a class="fw-bold" href="#">
             <font-awesome-icon icon="fa-solid fa-magnifying-glass" />
             </a>
@@ -39,7 +39,7 @@ export default {
   data() {
     return {
       navbar: ['Home', 'Apple', 'Microsoft', 'Android', 'Forums', 'Contact us'],
-      selected: null
+      selected: 0
     }
   },
   methods: {
@@ -53,6 +53,7 @@ export default {
 <style lang="scss" scoped>
 .navbar {
     font-size: 0.8rem;
+    padding: 0;
     .logo {
         img {
             width: 180px;
@@ -60,11 +61,12 @@ export default {
         }
     }
     li {
-        padding: 0 1rem;
-        position: relative;
-        a {
-            color: white;
-        }
+      height: 80px;
+      padding: 0 1rem;
+      position: relative;
+      a {
+        color: white;
+      }
     }
 }
 
