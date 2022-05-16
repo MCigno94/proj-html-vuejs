@@ -37,28 +37,14 @@
 
 /* #region HEADER */
 
-header {
-    .navbar {
-        .logo {
-            img {
-                width: 180px;
-                height: 45px;
-            }
-        }
-        li {
-            padding: 0 1rem;
-            a {
-                color: white;
-            }
-        }
-        form {
-            button,
-            input {
-                display: inline-block;
-                height: fit-content;
-            }
-        }
-    }
+.active {
+    width: 15px;
+    height: 15px;
+    background-color: $forum-primary;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    transform: rotate(45deg) translate(-50%, 0);
 }
 
 
