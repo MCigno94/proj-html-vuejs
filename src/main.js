@@ -8,15 +8,15 @@ Vue.config.productionTip = false
 import { library } from '@fortawesome/fontawesome-svg-core'
 
 /* import specific icons */
-import { faUserSecret, faStar, faMagnifyingGlass, faFilm } from '@fortawesome/free-solid-svg-icons'
+import { faMagnifyingGlass, faChevronRight, faRightLong, faFileLines, faMugSaucer, faCubes, faTv, faWrench } from '@fortawesome/free-solid-svg-icons';
+
+import { faApple, faWindows, faAndroid } from '@fortawesome/free-brands-svg-icons'
 
 /* import font awesome icon component */
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* add icons to the library */
-library.add(faUserSecret, faStar);
-library.add(faUserSecret, faMagnifyingGlass);
-library.add(faUserSecret, faFilm);
+library.add(faMagnifyingGlass, faChevronRight, faRightLong, faFileLines, faApple, faWindows, faAndroid, faMugSaucer, faCubes, faTv, faWrench);
 
 /* add font awesome icon component */
 Vue.component('font-awesome-icon', FontAwesomeIcon)
