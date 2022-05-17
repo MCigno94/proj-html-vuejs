@@ -15,7 +15,7 @@
     <!-- /.jumbotrone -->
     <section class="avada_forum bg_light text-center">
       <h5 class="subtitle_section text_light_dark">avada forum is the place to be</h5>
-      <p class="text_light_dark">
+      <p class="text_light_dark m-0 fs-6">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque! <br>
         Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -24,7 +24,7 @@
     <!-- /.avada_forum -->
 
     <NewsArticleComponent />
-    
+
     <div class="our_blog text-uppercase bg_primary_btn text-center">
       <a class="text-white text-decoration-none" href="#">
         read our blog
