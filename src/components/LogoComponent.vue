@@ -1,5 +1,5 @@
 <template>
-    <div class="logo">
+    <div id="logo">
         <a href="#">
             <img src="@/assets/img/logo.png" alt="Logo Avada Forum">
         </a>

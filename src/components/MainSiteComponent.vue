@@ -174,7 +174,7 @@
         <div class="activeIcon h-3 my-4 bg_active"></div>
         <div class="row row-cols-4">
           <!-- /.activeIcon -->
-          <div class="cols p-3" v-for="(icon, index) in icons" :key="index">
+          <div class="cols p-3" v-for="(icon, index) in iconsMain" :key="index">
             <div class="icon d-flex justify-content-center align-items-center flex-column">
               <div class="d-flex justify-content-center align-items-center my-1 m-auto">
                 <font-awesome-icon :icon="icon.description" />
@@ -299,7 +299,7 @@ export default {
         comments: false,
       }
       ],
-      icons: [{
+      iconsMain: [{
         description: 'fa-solid fa-file-lines',
         title: 'News & Community'
       },
@@ -330,8 +330,24 @@ export default {
       {
         description: 'fa-solid fa-wrench',
         title: 'Tutorials & Guides'
-      }
-      ]
+      },
+      {
+        description: 'fa-brands fa-facebook-f',
+        title: 'Facebook'
+      },
+      {
+        description: 'fa-brands fa-twitter',
+        title: 'Twitter'
+      },
+      {
+        description: 'fa-brands fa-instagram',
+        title: 'Instagram'
+      },
+      {
+        description: 'fa-brands fa-youtube',
+        title: 'YouTube'
+      },  
+      ],
     }
   },
   methods: {
