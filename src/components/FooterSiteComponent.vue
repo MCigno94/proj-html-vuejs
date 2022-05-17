@@ -1,6 +1,6 @@
 <template>
-  <footer class="site_footer">
-    <div class="top_footer">
+  <footer class="site_footer position-relative">
+    <div class="top_footer border-bottom">
       <div class="container">
         <div class="row row-cols-4">
           <div class="cols">
@@ -13,7 +13,7 @@
           <!-- /.cols -->
           <div class="cols">
             <h6 class="text-uppercase fw-bold">popular topic</h6>
-            <ul class="topics text_light_dark list-style-none">
+            <ul class="topics text_light_dark p-0">
               <li class="border-bottom py-3 d-flex" v-for="(topic, index) in topics" :key="index">
                 <span class="pe-2 icon" @click="selectTopic(index)">
                   <font-awesome-icon :class="active.visible && active.index == index ? 'icon_left' : '' " icon="fa-solid fa-chevron-right" />
@@ -22,7 +22,7 @@
                   <strong class="fw-bold">
                     {{topic.title}}
                   </strong>
-                  <p v-if="active.visible && active.index == index">
+                  <p class="my-1" v-if="active.visible && active.index == index">
                     {{topic.discussion}}
                   </p>
                 </div>
@@ -34,7 +34,7 @@
           <!-- /.cols -->
           <div class="cols">
             <h6 class="text-uppercase fw-bold">recent topic</h6>
-            <ul class="topics text_light_dark list-style-none">
+            <ul class="topics text_light_dark p-0">
               <li class="border-bottom py-3 d-flex" v-for="(topic, index) in topics" :key="index">
                 <span class="pe-2 icon" @click="selectTopic(index)">
                   <font-awesome-icon icon="fa-solid fa-chevron-right" />
@@ -55,7 +55,7 @@
           <!-- /.cols -->
           <div class="cols">
             <h6 class="text-uppercase fw-bold">latest replies</h6>
-            <ul class="topics text_light_dark list-style-none">
+            <ul class="topics text_light_dark p-0">
               <li class="border-bottom py-3 d-flex" v-for="(topic, index) in topics" :key="index">
                 <span class="pe-2 icon" @click="selectTopic(index)">
                   <font-awesome-icon icon="fa-solid fa-chevron-right" />
@@ -88,14 +88,14 @@
           </div>
           <!-- /.coopyright -->
           <div class="col-auto">
-            <span class="social" v-for="(icon, index) in iconsFooter" :key="index">
-              <font-awesome-icon class="icon_social text-white" :icon="icon.description" />
+            <span class="social px-1" v-for="(icon, index) in iconsFooter" :key="index">
+              <font-awesome-icon class="icon_social rounded-circle p-3 text-white" :icon="icon.description" />
             </span>
           </div>
           <!-- /.social -->
         </div>
         <!-- /.row -->
-        <div class="up_site rounded-3">
+        <div class="up_site rounded-3 position-absolute px-3 py-2">
           <a class="text-decoration-none text-white" href="#logo">
             <font-awesome-icon icon="fa-solid fa-chevron-up" />
           </a>
@@ -176,37 +176,21 @@ export default {
 
 <style lang="scss" scoped>
 .site_footer {
-    position: relative;
     .top_footer {
         padding: 5rem 0;
-        border-bottom: 1px solid black;
-        ul {
-            padding: 0 !important;
-            transition: 1.5s all;
-            li {
-              position: relative;
-            }
-        }.icon {
+        .icon {
           cursor: pointer;
           .icon_left {
             transform: rotate(90deg);
-        }
-        }
-        .accordian {
-          p {
-              margin: 0.25rem 0 !important;
-            }
+          }
         }
     }
     .bottom_footer {
         padding: 2rem 0;
         .social {
-            padding: 0 0.3rem;
             .icon_social {
                 width: 25px;
                 height: 25px;
-                padding: 0.75rem;
-                border-radius: 50%;
                 cursor: pointer;
             }
         }
@@ -224,9 +208,7 @@ export default {
         }
     }
     .up_site {
-        padding: 0.75rem 1rem;
         background: #474747;
-        position: absolute;
         bottom: 15px;
         right: 15px;
     }
