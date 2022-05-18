@@ -44,7 +44,7 @@ export default {
   },
   methods: {
     activeClick(i) {
-      this.selected = i;
+        this.selected = i;
     }
   }
 }
@@ -61,6 +61,15 @@ export default {
     }
     li {
       height: 80px;
+      .active {
+        width: 24px;
+        height: 24px;
+        background-color: $forum-primary;
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+      }
     }
 }
 

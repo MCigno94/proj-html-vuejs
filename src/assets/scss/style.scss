@@ -71,12 +71,6 @@
 /* #endregion UTILITY */
 
 
-/* #region HEADER */
-
-
-/* #endregion HEADER */
-
-
 /* #region MAIN */
 
 .jumbotrone {
@@ -154,12 +148,16 @@
         .icon {
             aspect-ratio: 1/1;
             border-top: 3px solid $forum-primary;
+            transition: 0.6s;
             div {
                 width: 4.5rem;
                 height: 4.5rem;
                 background-color: $forum-active;
                 font-size: 2.25rem;
             }
+        }
+        .icon:hover {
+            transform: scale(1.1);
         }
     }
 }

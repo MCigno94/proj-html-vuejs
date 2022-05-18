@@ -87,7 +87,7 @@
     <section class="subscribe bg_light text-center">
       <h4 class="pb-3 fw-bold">Subscribe to our Newsletter</h4>
       <div class="input-group mb-3 m-auto">
-        <input type="email" class="form-control rounded" placeholder="Insert your email*">
+        <input type="email" class="form-control rounded" placeholder="Insert your email*" required>
         <button class="btn_primary bg_primary_btn ms-4" type="submit" id="button-addon2">send</button>
       </div>
     </section>
